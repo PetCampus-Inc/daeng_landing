@@ -11,8 +11,8 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
-      "eslint --cache --cache-location ./.cache/.eslintcache",
-      "prettier --cache --write "
+      "eslint --no-cache --fix",
+      "prettier --no-cache --write"
     ]
   },
   "dependencies": {
