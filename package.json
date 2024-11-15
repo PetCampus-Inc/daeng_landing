@@ -9,10 +9,11 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  "homepage": "https://petcampus-inc.github.io/daeng_landing/",
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
-      "eslint --cache --cache-location ./.cache/.eslintcache",
-      "prettier --cache --write"
+      "eslint --cache-location ./.cache/.eslintcache",
+      "prettier --write"
     ]
   },
   "dependencies": {
