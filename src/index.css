@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-
-  /* color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424; */
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  overflow: hidden;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -16,16 +16,40 @@
 }
 
 a {
-  display: block;
+  &:link,
+  &:visited {
+    color: inherit;
+    text-decoration: none;
+  }
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 body {
   margin: 0;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  min-width: 320px;
-  min-height: 100vh;
-  font-size: 16px;
-  font-weight: 500;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family:
+    'Pretendard',
+    'Pretendard Variable',
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    Roboto,
+    'Helvetica Neue',
+    'Segoe UI',
+    'Apple SD Gothic Neo',
+    'Noto Sans KR',
+    'Malgun Gothic',
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol',
+    sans-serif;
+}
+
+@layer components {
+  .header-li {
+    @apply h-9 w-32 font-bold leading-9 hover:cursor-pointer;
+  }
 }

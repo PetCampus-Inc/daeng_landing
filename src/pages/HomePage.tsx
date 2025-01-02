@@ -1,5 +1,11 @@
+import Header from '../components/Header';
+
 const HomePage = () => {
-  return <div>페이지 준비중입니다.</div>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 };
 
 export default HomePage;
