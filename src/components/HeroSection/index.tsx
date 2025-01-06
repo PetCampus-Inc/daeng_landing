@@ -3,7 +3,7 @@ import HeroSectionImg from '../../assets/hero-section-img.png';
 
 const HeroSection = () => {
   return (
-    <article className='section-container z-[1] justify-start bg-gradient-to-b from-white to-[#FFF8EF] to-90%'>
+    <section className='section-container z-[1] justify-start bg-gradient-to-b from-white to-[#FFF8EF] to-90%'>
       <div className='section-text-wrapper'>
         <h3 className='section-title'>
           강아지 유치원의
@@ -21,7 +21,7 @@ const HeroSection = () => {
         <img src={HeroSectionImg} alt='똑독 서비스 이미지' />
       </div>
       <HeroSectionCricle className='absolute right-[115px] top-[100px] z-[-2]' />
-    </article>
+    </section>
   );
 };
 
