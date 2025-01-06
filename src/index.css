@@ -63,7 +63,7 @@ body {
   }
 
   .section-title {
-    @apply text-text_gray text-2xl font-bold lg:text-4xl xl:text-5xl xl:leading-[4rem];
+    @apply text-gray_6 text-2xl font-bold lg:text-4xl xl:text-5xl xl:leading-[4rem];
   }
 
   .section-title em {
@@ -71,6 +71,6 @@ body {
   }
 
   .section-sub-text {
-    @apply text-text_gray text-xl font-normal lg:text-2xl xl:text-[2rem];
+    @apply text-gray_6 text-xl font-normal lg:text-2xl xl:text-[2rem];
   }
 }
