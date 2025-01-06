@@ -3,7 +3,7 @@ import KnockDogText from '../../assets/knock-dog-text';
 
 const Header = () => {
   return (
-    <header className='fixed top-0 flex w-full justify-between border border-line_gray px-4 py-4 sm:px-10 sm:py-5 md:px-20 md:py-6 lg:px-40 lg:py-8 xl:px-60 xl:py-10 2xl:px-[300px]'>
+    <header className='fixed top-0 z-50 flex w-full justify-between border border-line_gray px-4 py-4 sm:px-10 sm:py-5 md:px-20 md:py-6 lg:px-40 lg:py-8 xl:px-60 xl:py-10 2xl:px-[300px]'>
       <div className='flex items-center gap-1'>
         <HeaderIcon />
         <KnockDogText />
