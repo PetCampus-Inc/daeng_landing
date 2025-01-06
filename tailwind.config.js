@@ -8,6 +8,7 @@ export default {
 
         line_gray: '#E3E7EB',
         nav_gray: '#515151',
+        text_gray: '#454545'
       },
     },
   },
