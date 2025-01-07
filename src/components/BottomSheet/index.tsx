@@ -3,6 +3,7 @@ import Portal from '../Portal';
 import CloseIcon from '../../assets/close-icon';
 import AppleLogoIcon from '../../assets/apple-logo-icon';
 import GoogleLogoIcon from '../../assets/google-logo.svg';
+import QrCodeIcon from '../../assets/qr-code.svg';
 
 export interface BottomSheetProps {
   isOpen: boolean;
@@ -47,9 +48,9 @@ const BottomSheet = ({ isOpen, close }: BottomSheetProps) => {
                       <img src={GoogleLogoIcon} alt='Google Logo' /> Google Play
                     </button>
                   </div>
-                  <div className='flex w-1/2 flex-col items-center justify-between'>
+                  <div className='flex w-1/2 flex-col items-center justify-between gap-5'>
                     <p className='text-xl text-gray_5'>QR코드 다운로드</p>
-                    <div></div>
+                    <img src={QrCodeIcon} alt='Google Logo' />
                     <p className='text-gray_5'>
                       핸드폰 카메라로 코드를 스캔하세요
                     </p>
