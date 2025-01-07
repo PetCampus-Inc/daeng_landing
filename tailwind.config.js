@@ -6,6 +6,7 @@ export default {
       colors: {
         primaryColor: '#956F4C',
 
+        gray_5: '#A3A3A3',
         gray_6: '#454545',
         line_gray: '#E3E7EB',
         nav_gray: '#515151',

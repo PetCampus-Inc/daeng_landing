@@ -53,6 +53,11 @@ body {
     @apply h-9 w-32 font-bold leading-9 hover:cursor-pointer;
   }
 
+  /* bottom-sheet */
+  .pill-button {
+    @apply flex h-14 w-56 items-center justify-center gap-1 rounded-full bg-primaryColor text-lg font-bold text-white;
+  }
+
   /* section */
   .section-container {
     @apply relative flex h-screen flex-col items-center overflow-hidden px-4 py-40 sm:px-5 md:px-20 lg:flex-row lg:px-40 xl:px-60 xl:py-10 2xl:px-[300px];
@@ -63,7 +68,7 @@ body {
   }
 
   .section-title {
-    @apply text-gray_6 text-2xl font-bold lg:text-4xl xl:text-5xl xl:leading-[4rem];
+    @apply text-2xl font-bold text-gray_6 lg:text-4xl xl:text-5xl xl:leading-[4rem];
   }
 
   .section-title em {
@@ -71,6 +76,6 @@ body {
   }
 
   .section-sub-text {
-    @apply text-gray_6 text-xl font-normal lg:text-2xl xl:text-[2rem];
+    @apply text-xl font-normal text-gray_6 lg:text-2xl xl:text-[2rem];
   }
 }
