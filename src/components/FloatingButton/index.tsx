@@ -4,7 +4,7 @@ import knockdogLogo from '../../assets/knockdog-logo.svg';
 
 const FloatingButton = () => {
   return (
-    <button className='fixed bottom-36 right-10 sm:right-14 md:right-20 lg:right-32 xl:right-40 2xl:right-80'>
+    <button className='fixed bottom-36 right-10 z-50 sm:right-14 md:right-20 lg:right-32 xl:right-40 2xl:right-80'>
       <div className='relative flex h-36 w-36 flex-col items-start justify-center rounded-full bg-white px-9 py-7 shadow-round sm:h-36 sm:w-36 md:h-40 md:w-40 md:px-11 md:py-8 lg:h-44 lg:w-44 lg:px-12 lg:py-10 xl:h-48 xl:w-48 xl:px-14 2xl:h-52 2xl:w-52 2xl:px-14 2xl:py-12'>
         <p className='text-base font-bold text-gray_6 md:text-lg lg:text-xl 2xl:text-2xl'>
           똑독 앱
