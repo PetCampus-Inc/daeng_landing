@@ -10,6 +10,9 @@ export default {
         line_gray: '#E3E7EB',
         nav_gray: '#515151',
       },
+      boxShadow: {
+        round: '0px 0px 30px rgb(0 0 0 / 0.15)',
+      },
     },
   },
   plugins: [],
