@@ -3,7 +3,7 @@ import HeroSectionImg from '../../assets/hero-section-img.png';
 
 const HeroSection = () => {
   return (
-    <section className='section-container z-[1] justify-start bg-gradient-to-b from-white to-[#FFF8EF] to-90%'>
+    <section className='section-container justify-start bg-gradient-to-b from-white to-[#FFF8EF] to-90%'>
       <div className='section-text-wrapper'>
         <h3 className='section-title'>
           강아지 유치원의
