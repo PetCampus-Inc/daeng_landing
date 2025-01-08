@@ -49,8 +49,14 @@ body {
 }
 
 @layer components {
+  /* header */
   .header-li {
     @apply h-9 w-32 font-bold leading-9 hover:cursor-pointer;
+  }
+
+  /* bottom-sheet */
+  .pill-button {
+    @apply flex h-14 w-56 items-center justify-center gap-1 rounded-full bg-primaryColor text-lg font-bold text-white;
   }
 
   /* section */
