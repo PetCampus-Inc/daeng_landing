@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-
-  /* color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424; */
+  width: 100%;
+  /* height: 100vh; */
+  top: 0;
+  left: 0;
+  /* overflow: hidden; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -16,16 +16,88 @@
 }
 
 a {
-  display: block;
+  &:link,
+  &:visited {
+    color: inherit;
+    text-decoration: none;
+  }
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 body {
   margin: 0;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  min-width: 320px;
-  min-height: 100vh;
-  font-size: 16px;
-  font-weight: 500;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family:
+    'Pretendard',
+    'Pretendard Variable',
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    Roboto,
+    'Helvetica Neue',
+    'Segoe UI',
+    'Apple SD Gothic Neo',
+    'Noto Sans KR',
+    'Malgun Gothic',
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol',
+    sans-serif;
+}
+
+@layer components {
+  /* header */
+  .header-li {
+    @apply h-9 w-32 font-bold leading-9 hover:cursor-pointer;
+  }
+
+  /* bottom-sheet */
+  .pill-button {
+    @apply flex h-14 w-56 items-center justify-center gap-1 rounded-full bg-primaryColor text-lg font-bold text-white;
+  }
+
+  /* section */
+  .section-container {
+    @apply relative z-0 flex h-screen flex-col items-center overflow-hidden px-4 py-10 sm:px-5 md:px-20 lg:flex-row lg:px-40 xl:px-60 xl:py-10 2xl:px-[300px];
+  }
+
+  .section-group-container {
+    @apply relative z-0 flex flex-col items-center overflow-hidden bg-white px-4 py-60 sm:px-5 md:px-20 lg:px-40 xl:px-60 2xl:px-[300px];
+  }
+
+  .section-download-container {
+    @apply relative z-0 flex items-center overflow-hidden bg-white px-4 py-60 sm:px-5 md:px-20 lg:px-40 xl:px-60 2xl:px-[300px];
+  }
+
+  .section-text-wrapper {
+    @apply flex flex-col items-start gap-y-5;
+  }
+
+  .section-title {
+    @apply text-2xl font-bold text-gray_6 lg:text-4xl xl:text-5xl xl:leading-[4rem];
+  }
+
+  .section-service-text {
+    @apply flex items-center text-xl font-bold text-primaryColor lg:text-[32px];
+  }
+
+  .section-title em {
+    @apply text-primaryColor;
+  }
+
+  .section-sub-text {
+    @apply text-xl font-normal text-gray_6 lg:text-2xl xl:text-[2rem] xl:leading-[52px];
+  }
+
+  /* footer */
+  .footer-download-button {
+    @apply flex h-12 items-center justify-center gap-1 rounded-xl border border-gray_5 font-bold;
+  }
+
+  .footer-subtext {
+    @apply pl-2 text-sm font-normal text-gray_5;
+  }
 }
