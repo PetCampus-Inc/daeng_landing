@@ -27,7 +27,7 @@ const BottomSheet = ({ isOpen, close }: BottomSheetProps) => {
               initial={{ y: '100%' }}
               animate={{ y: 0 }}
               exit={{ y: '100%' }}
-              transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+              transition={{ type: 'tween' }}
               onClick={(e) => e.stopPropagation()}
             >
               <div className='flex w-2/3 flex-col'>
@@ -40,7 +40,9 @@ const BottomSheet = ({ isOpen, close }: BottomSheetProps) => {
                 </h2>
                 <div className='flex h-2/5 justify-center'>
                   <div className='flex w-1/2 flex-col items-center gap-3 border-r'>
-                    <p className='mb-6 text-xl text-gray_5'>스토어 다운로드</p>
+                    <span className='mb-6 text-xl text-gray_5'>
+                      스토어 다운로드
+                    </span>
                     <button className='pill-button'>
                       <AppleLogo /> APP Store
                     </button>
@@ -49,7 +51,7 @@ const BottomSheet = ({ isOpen, close }: BottomSheetProps) => {
                     </button>
                   </div>
                   <div className='flex w-1/2 flex-col items-center justify-between gap-5'>
-                    <p className='text-xl text-gray_5'>QR코드 다운로드</p>
+                    <span className='text-xl text-gray_5'>QR코드 다운로드</span>
                     <img src={QrCodeIcon} alt='Google Logo' />
                     <p className='text-gray_5'>
                       핸드폰 카메라로 코드를 스캔하세요
