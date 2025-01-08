@@ -1,9 +1,9 @@
 import { AnimatePresence, motion } from 'motion/react';
 import Portal from '../Portal';
 import CloseIcon from '../../assets/close-icon';
-import AppleLogoIcon from '../../assets/apple-logo-icon';
-import GoogleLogoIcon from '../../assets/google-logo.svg';
 import QrCodeIcon from '../../assets/qr-code.svg';
+import GoogleLogo from '../../assets/google-logo';
+import AppleLogo from '../../assets/apple-logo';
 
 export interface BottomSheetProps {
   isOpen: boolean;
@@ -42,10 +42,10 @@ const BottomSheet = ({ isOpen, close }: BottomSheetProps) => {
                   <div className='flex w-1/2 flex-col items-center gap-3 border-r'>
                     <p className='mb-6 text-xl text-gray_5'>스토어 다운로드</p>
                     <button className='pill-button'>
-                      <AppleLogoIcon /> APP Store
+                      <AppleLogo /> APP Store
                     </button>
                     <button className='pill-button'>
-                      <img src={GoogleLogoIcon} alt='Google Logo' /> Google Play
+                      <GoogleLogo /> Google Play
                     </button>
                   </div>
                   <div className='flex w-1/2 flex-col items-center justify-between gap-5'>

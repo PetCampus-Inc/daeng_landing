@@ -49,6 +49,7 @@ body {
 }
 
 @layer components {
+  /* header */
   .header-li {
     @apply h-9 w-32 font-bold leading-9 hover:cursor-pointer;
   }
